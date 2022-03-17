@@ -14,6 +14,7 @@ namespace MyFirstMethod
             CountToN(5);
             CountToN(3);
             CountTo10();
+            CountToN(1, 10);
         }
 
         //This method calls the other one to count until 10
@@ -26,6 +27,15 @@ namespace MyFirstMethod
         private static void CountToN(int n)
         {
             for (int i = 1; i <= n; i++)
+            {
+                Console.WriteLine(i);
+            }
+        }
+
+        //Counts the numbers between the first argument and the second one
+        private static async void CountToN(int n1, int n2)
+        {
+            for ( int i = n1+1; i < n2; i++)
             {
                 Console.WriteLine(i);
             }

@@ -33,7 +33,7 @@ namespace MyFirstMethod
         }
 
         //Counts the numbers between the first argument and the second one
-        private static async void CountToN(int n1, int n2)
+        private static void CountToN(int n1, int n2)
         {
             for ( int i = n1+1; i < n2; i++)
             {
